@@ -1,6 +1,6 @@
 <br/>
   <h1 align="center">
-    Django Simple E-Commerce Tutorial 
+    Django E-Commerce Project - DEBO 
   </h1>
 <br/>
 
