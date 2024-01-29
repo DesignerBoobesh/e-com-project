@@ -1,0 +1,26 @@
+{% comment %} {% if messages %}
+    {% for message in messages  %}
+    <div class="alert alert-warning alert-dismissible fade show"  role="alert">
+        {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+{% endif %} {% endcomment %}
+
+{% if messages %}
+   {% for message in messages %}
+   {% comment %} <div  id="message" class="container" style="position:relative;"> {% endcomment %}
+        <div id="message" {% if message.tags %} class="alert alert-{{message.tags}}"{% endif %} role="alert">
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.ERRORS %} Important: {% endif %}
+            {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% comment %} </div>  {% endcomment %}
+   {% endfor %}     
+{% endif %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+setTimeout(function(){
+$('#message').fadeOut('slow');
+}, 4000);
+</script>
