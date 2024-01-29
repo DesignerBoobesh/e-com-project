@@ -24,7 +24,19 @@ virtualenv venv
 
 - ## Migrate & User & Run
 - ``` create .env file (same as .env_sample and fill the required fields) ```
-- (venv) ``` python manage.py makemigrations ```
-- (venv) ``` python manage.py migrate ```
-- (venv) ``` python manage.py createsuperuser ```
-- (venv) ``` python manage.py runserver ```
+- Make Migrations
+  ```Shell
+  python manage.py makemigrations
+  ```
+- Migrate all the tables to the DB
+  ```Shell
+   python manage.py migrate
+  ```
+- Create SuperUser
+  ```Shell
+   python manage.py createsuperuser
+  ```
+- Run Server
+  ```Shell
+   python manage.py runserver
+   ```
