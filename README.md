@@ -19,7 +19,7 @@ virtualenv venv
 - Windows - ``` venv\Scripts\activate ```
 
 - ## Clone & Install
-- ``` git clone https://github.com/umutbektas/django-ecommerce.git ```
+- ``` https://github.com/DesignerBoobesh/e-com-project.git ```
 - (venv) ``` pip install -r requirements.txt ```
 
 - ## Migrate & User & Run
